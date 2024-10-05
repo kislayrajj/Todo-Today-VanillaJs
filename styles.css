@@ -1,0 +1,150 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(192, 235, 166, 0.4);
+
+  height: 100vh;
+}
+
+.app {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 40px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  color: rgb(18, 153, 25);
+}
+
+.heading span {
+  color: black;
+}
+
+.subheading h2 {
+  font-size: 34px;
+  display: inline;
+}
+.subheading i {
+  font-size: 25px;
+  color: rgb(26, 209, 50);
+  padding: 0 29px;
+}
+
+.subheading p {
+  color: rgb(187, 177, 177);
+  padding-top: 20px;
+}
+
+.progress-bar {
+  height: 35px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar .progress-level {
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  color: gainsboro;
+}
+
+.dynamicProgressLevel {
+  background-color: rgb(8, 187, 8);
+}
+
+.error-div {
+  height: 20px;
+  color: red;
+}
+.goals {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.goals > div {
+  display: flex;
+  gap: 10px;
+  height: 50px;
+  width: 95%;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.goals .goal-input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.goals .checkbox {
+  outline: none;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  padding: 30px 0px;
+}
+
+footer .slogan {
+  font-size: 20px;
+  color: rgb(32, 175, 63);
+  font-weight: bold;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: rgb(134, 132, 132);
+}
+
+footer a:hover {
+  color: black;
+}
+
+@media (max-width: 568px) {
+  .app {
+    width: 300px;
+  }
+}
+
+@media (max-width: 390px) {
+  .app {
+    width: 240px;
+  }
+}
+
+.inputTextOnBlur {
+  font-size: 20px;
+  color: rgb(11, 163, 11);
+}
+
+.checkedInputText {
+  text-decoration: line-through;
+}
