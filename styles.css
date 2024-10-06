@@ -150,6 +150,9 @@ footer a:hover {
   .subheading p {
     font-size: 13px;
   }
+  .error-div{
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 390px) {

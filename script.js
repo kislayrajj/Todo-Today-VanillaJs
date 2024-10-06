@@ -59,6 +59,7 @@ for (let i = 0; i < 3; i++) {
           e.target.classList.add("inputTextOnBlur");
         }
       });
+      document.querySelector(".error-div").textContent = "";
       e.target.classList.remove("inputTextOnBlur");
       goalInputBoxes[j].style.textDecoration = "none";
       goalCheckboxes[j].checked = false;
